@@ -2,7 +2,7 @@
   <img src="https://github.com/ThreeLightStudio.png?size=160" alt="ThreeLight Studio logo" width="120" />
   <h1>ThreeLight Studio</h1>
   <p><strong>Small products and open-source experiments for AI-native workflows, local-first tools, and creative software.</strong></p>
-  <p><a href="https://github.com/ThreeLightStudio/ThreeLightStudio/blob/main/README.ko.md">한국어 README</a> · <a href="https://threelight-studio.com/">Website</a> · <a href="https://github.com/ThreeLight2000">Personal profile</a></p>
+  <p><a href="README.ko.md">한국어 README</a> · <a href="https://threelight-studio.com/">Website</a> · <a href="https://github.com/ThreeLight2000">Personal profile</a></p>
 </div>
 
 ThreeLight Studio is a small product studio exploring practical tools, interfaces, and workflows for the AI era.
