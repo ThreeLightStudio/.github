@@ -2,16 +2,19 @@
   <img src="https://github.com/ThreeLightStudio.png?size=160" alt="ThreeLight Studio logo" width="120" />
   <h1>ThreeLight Studio</h1>
   <p><strong>Small products and open-source experiments for AI-native workflows, local-first tools, and creative software.</strong></p>
-  <p><a href="README.ko.md">한국어 README</a> · <a href="https://threelight-studio.com/">Website</a> · <a href="https://github.com/ThreeLight2000">Personal profile</a></p>
+  <p><a href="https://threelight-studio.com/">Website</a> · <a href="https://github.com/ThreeLight2000">Personal profile</a></p>
 </div>
 
 ThreeLight Studio is a small product studio exploring practical tools, interfaces, and workflows for the AI era.
+
+Most of our projects trace back to one problem: work gets interrupted — by context switches, by limits, by coming back weeks later. Our tools help people and AI agents pick work up again where it stopped, locally.
 
 ## Live products
 
 | Product | Description |
 | --- | --- |
-| [MapBridge](https://mapbridge.threelight-studio.com/) | A map-based interface experiment from ThreeLight Studio. |
+| [StateCarry](https://statecarry.threelight-studio.com/) | Pick up where you left off — return to a project, see where it stands, and choose what to do next. ([Repo](https://github.com/ThreeLightStudio/statecarry) · [macOS beta](https://github.com/ThreeLightStudio/statecarry/releases/latest/download/macos-arm64-StateCarry.dmg)) |
+| [MapBridge](https://mapbridge.threelight-studio.com/) | A map-based interface experiment from ThreeLight Studio. Development currently paused. |
 
 ## Featured open source
 
