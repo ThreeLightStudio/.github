@@ -1,36 +1,37 @@
 <div align="center">
   <img src="https://github.com/ThreeLightStudio.png?size=160" alt="ThreeLight Studio logo" width="120" />
   <h1>ThreeLight Studio</h1>
-  <p><strong>Small products and open-source experiments for AI-native workflows, local-first tools, and creative software.</strong></p>
+  <p><strong>Products, tools, and experiments in frontend, editor, and desktop engineering.</strong></p>
   <p><a href="https://threelight-studio.com/">Website</a> · <a href="https://github.com/ThreeLight2000">Personal profile</a></p>
 </div>
 
-ThreeLight Studio is a small product studio exploring practical tools, interfaces, and workflows for the AI era.
+ThreeLight Studio explores practical interfaces for returning to work, editing media, and keeping useful data portable. The public projects show React/TypeScript UI, desktop runtime boundaries, declarative editor state, browser storage, and testable data contracts.
 
-Most of our projects trace back to one problem: work gets interrupted — by context switches, by limits, by coming back weeks later. Our tools help people and AI agents pick work up again where it stopped, locally.
+## Start with these products
 
-## Live products
+- **[StateCarry](https://github.com/ThreeLightStudio/statecarry)** — review an interrupted project's context, current decision, and next choice. **Apple Silicon macOS beta.** [Website](https://statecarry.threelight-studio.com/) · [Demo](https://youtu.be/vQpwQ_hr_ew) · [Download](https://github.com/ThreeLightStudio/statecarry/releases/latest/download/macos-arm64-StateCarry.dmg) · [한국어](https://github.com/ThreeLightStudio/statecarry/blob/main/README.ko.md)
+- **[Rendium Desktop Studio](https://github.com/ThreeLightStudio/rendium-workspace)** — edit and preview local media with an Electron/React app and a declarative TypeScript engine, then export MP4. **Source-stage; no published installer.** [Edit/export walkthrough](https://github.com/ThreeLightStudio/rendium-workspace#one-edit-from-intent-to-scene) · [한국어](https://github.com/ThreeLightStudio/rendium-workspace/blob/main/README.ko.md)
+- **[DatePack](https://github.com/ThreeLightStudio/datepack)** — carry plans, photos, and recorded experiences in a portable `.datepack.json` file. **Public browser beta.** [Try it](https://threelightstudio.github.io/datepack/) · [Format walkthrough](https://github.com/ThreeLightStudio/datepack#a-plan-becomes-a-portable-file) · [한국어](https://github.com/ThreeLightStudio/datepack/blob/main/README.ko.md)
 
-| Product | Description |
-| --- | --- |
-| [StateCarry](https://statecarry.threelight-studio.com/) | Pick up where you left off — return to a project, see where it stands, and choose what to do next. ([Repo](https://github.com/ThreeLightStudio/statecarry) · [macOS beta](https://github.com/ThreeLightStudio/statecarry/releases/latest/download/macos-arm64-StateCarry.dmg)) |
-| [DatePack](https://threelightstudio.github.io/datepack/) | A local-first date planner: itinerary, places, photos, and Plan B's in one portable `.datepack.json` file. Public beta; no account required. ([Repo](https://github.com/ThreeLightStudio/datepack)) |
-| [MapBridge](https://mapbridge.threelight-studio.com/) | A map-based interface experiment from ThreeLight Studio. Development currently paused. |
+## Follow the engineering
 
-## Featured open source
+- **StateCarry — desktop ownership and work review.** Shared UI/contracts stay separate from native lifecycle and server adapters; result reports, checks, and human acceptance have distinct roles. [Architecture](https://github.com/ThreeLightStudio/statecarry/blob/e793596d99cfcf253caf313f23f407cc43e16057/docs/architecture.md) · [Decision code](https://github.com/ThreeLightStudio/statecarry/blob/e793596d99cfcf253caf313f23f407cc43e16057/packages/core/src/project-model.ts) · [Acceptance fixtures](https://github.com/ThreeLightStudio/statecarry/blob/e793596d99cfcf253caf313f23f407cc43e16057/tests/project-workspace-core.test.ts) · [Beta release](https://github.com/ThreeLightStudio/statecarry/releases/tag/v0.3.0)
+- **Rendium — intent → manifest → runtime scene.** Immer forward/inverse patches support undo/redo; reconciliation updates runtime layers and can recover by rebuilding the scene. [Store](https://github.com/ThreeLightStudio/rendium-workspace/blob/3bfabbf7725cda8904f4dd8518c1edda1a59b074/packages/rendium-engine/src/store/EngineStore.ts) · [Reconciler](https://github.com/ThreeLightStudio/rendium-workspace/blob/3bfabbf7725cda8904f4dd8518c1edda1a59b074/packages/rendium-engine/src/timeline/SceneReconciler.ts) · [Recovery/order tests](https://github.com/ThreeLightStudio/rendium-workspace/blob/3bfabbf7725cda8904f4dd8518c1edda1a59b074/packages/rendium-engine/src/__tests__/SceneReconciler.test.ts) · [Chunked media export](https://github.com/ThreeLightStudio/rendium-workspace/blob/3bfabbf7725cda8904f4dd8518c1edda1a59b074/apps/desktop-studio/src/renderer/src/pipeline/WebCodecsPipeline.ts)
+- **DatePack — input → validated file → browser storage.** Format 3.0 separates plans from recorded experiences; import/export handles assets and compatibility, while proposed AI changes require review. [Reader](https://github.com/ThreeLightStudio/datepack/blob/48a20a35b8e2297fe3109d80d6399d1a949889eb/packages/datepack/src/read.ts) · [Format tests](https://github.com/ThreeLightStudio/datepack/blob/48a20a35b8e2297fe3109d80d6399d1a949889eb/packages/datepack/tests/datepack.test.ts) · [Verify run](https://github.com/ThreeLightStudio/datepack/actions/runs/36710171947) · [Device readiness](https://github.com/ThreeLightStudio/datepack/blob/48a20a35b8e2297fe3109d80d6399d1a949889eb/docs/release-readiness.md)
 
-| Project | Description |
-| --- | --- |
-| [Rendium Desktop Studio](https://github.com/ThreeLightStudio/rendium-workspace) | A free, fully local, no-login video editor for creative workflows. |
-| [What Was I Searching For?](https://github.com/ThreeLightStudio/what-was-i-searching-for) | A tiny internet lost-and-found for the moment you open a search tab and forget why you came. |
-| [PolyHarness](https://github.com/ThreeLightStudio/polyharness) | An experimental proxy for testing Korean-to-English prompt translation and token efficiency. |
+The linked source and tests show implementation and covered cases. StateCarry's current source is later than its beta binary; its configured AI analysis sends selected context to a provider. Rendium's release checklist and DatePack's device checklist describe acceptance still to complete.
 
-## Explore
+## Tools and public records
 
-- [All ThreeLight Studio repositories](https://github.com/ThreeLightStudio?tab=repositories)
-- [ThreeLight Studio website](https://threelight-studio.com/)
-- [ThreeLight2000 personal profile](https://github.com/ThreeLight2000)
+- **[Context OS](https://github.com/ThreeLightStudio/context-os)** — Chrome and Raycast capture/retrieval clients with an optional self-hosted Worker/D1 API and MCP adapter. [Storage and setup choices](https://github.com/ThreeLightStudio/context-os/blob/019e405264b241241fe2fc2bfb6766f450ff613c/docs/setup-modes.md) · [API tests](https://github.com/ThreeLightStudio/context-os/blob/019e405264b241241fe2fc2bfb6766f450ff613c/apps/server-context/test/index.test.ts) · [한국어](https://github.com/ThreeLightStudio/context-os/blob/main/README.ko.md)
+- **[ThreeLight Kit](https://github.com/ThreeLightStudio/threelight-kit)** — reusable configuration modules extracted from StateCarry. The public guide walks through manual assembly and checks in the recipient project. [Walkthrough](https://github.com/ThreeLightStudio/threelight-kit#example-assemble-a-reactvite-project) · [한국어](https://github.com/ThreeLightStudio/threelight-kit/blob/main/README.ko.md)
+- **[ThreeLight Content](https://github.com/ThreeLightStudio/threelight-content)** — canonical Markdown and semantic metadata for public writing and project records. [Convention](https://github.com/ThreeLightStudio/threelight-content/blob/354955d076d179c6fe55b4fcde21d6759246f9a6/schema/content-convention.md) · [English example](https://github.com/ThreeLightStudio/threelight-content/blob/354955d076d179c6fe55b4fcde21d6759246f9a6/content/articles/canonical-content-source--7sJjYFKa.en.md)
 
----
+## Experiments and retained references
 
-Small, public, and still in motion.
+- **[Jev/Laya local daemon](https://github.com/ThreeLightStudio/jev-laya-local-daemon)** — a bounded comparison of local and hosted typed decisions through one localhost contract. [Project page](https://threelightstudio.github.io/jev-laya-local-daemon/) · [Synthetic-suite conditions and results](https://github.com/ThreeLightStudio/jev-laya-local-daemon/blob/5ea52e0f3b50e99a6b94a1cf34be15b998f7ff99/docs/statecarry-benchmark.md)
+- **[MapBridge](https://mapbridge.threelight-studio.com/)** — a paused map-interface experiment. [Public experiment notes](https://github.com/ThreeLightStudio/threelight-content/blob/354955d076d179c6fe55b4fcde21d6759246f9a6/content/logs/mapbridge-conversion-density--BMahzBHw.ko.md)
+- **[PolyHarness](https://github.com/ThreeLightStudio/polyharness)** — Korean-to-English prompt translation and token-efficiency experiments; maintenance has ended. [Recorded results](https://threelightstudio.github.io/polyharness/)
+- **[What Was I Searching For?](https://github.com/ThreeLightStudio/what-was-i-searching-for)** — a small Astro search-memory page; maintenance has ended. [Live page](https://threelightstudio.github.io/what-was-i-searching-for/)
+
+[All studio repositories](https://github.com/ThreeLightStudio?tab=repositories) · [Website and public writing](https://threelight-studio.com/) · [ThreeLight2000's engineering profile and game projects](https://github.com/ThreeLight2000)
