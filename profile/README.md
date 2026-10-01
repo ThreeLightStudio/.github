@@ -14,6 +14,7 @@ Most of our projects trace back to one problem: work gets interrupted — by con
 | Product | Description |
 | --- | --- |
 | [StateCarry](https://statecarry.threelight-studio.com/) | Pick up where you left off — return to a project, see where it stands, and choose what to do next. ([Repo](https://github.com/ThreeLightStudio/statecarry) · [macOS beta](https://github.com/ThreeLightStudio/statecarry/releases/latest/download/macos-arm64-StateCarry.dmg)) |
+| [DatePack](https://threelightstudio.github.io/datepack/) | A local-first date planner: itinerary, places, photos, and Plan B's in one portable `.datepack.json` file. Public beta; no account required. ([Repo](https://github.com/ThreeLightStudio/datepack)) |
 | [MapBridge](https://mapbridge.threelight-studio.com/) | A map-based interface experiment from ThreeLight Studio. Development currently paused. |
 
 ## Featured open source
